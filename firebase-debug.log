@@ -1,0 +1,57 @@
+[debug] [2023-10-10T18:17:57.430Z] ----------------------------------------------------------------------
+[debug] [2023-10-10T18:17:57.432Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Balázs\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-10-10T18:17:57.432Z] CLI Version:   11.2.2
+[debug] [2023-10-10T18:17:57.432Z] Platform:      win32
+[debug] [2023-10-10T18:17:57.432Z] Node Version:  v18.15.0
+[debug] [2023-10-10T18:17:57.433Z] Time:          Tue Oct 10 2023 20:17:57 GMT+0200 (közép-európai nyári idő)
+[debug] [2023-10-10T18:17:57.434Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-10T18:17:57.441Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-10T18:17:57.441Z] > authorizing via signed-in user (horvbalazs93@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Balázs\Documents\Projects\battle-ships
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-10-10T18:18:02.883Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-10-10T18:18:03.420Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-10-10T18:18:03.420Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project battle-ships-40f27 (battle-ships) 
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with sample code
+[info] pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2023-10-10T18:18:05.316Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-10T18:18:05.316Z] > authorizing via signed-in user (horvbalazs93@gmail.com)
+[debug] [2023-10-10T18:18:05.316Z] [iam] checking project battle-ships-40f27 for permissions ["firebase.projects.get"]
+[debug] [2023-10-10T18:18:05.317Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/battle-ships-40f27:testIamPermissions [none]
+[debug] [2023-10-10T18:18:05.317Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/battle-ships-40f27:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-10-10T18:18:05.578Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/battle-ships-40f27:testIamPermissions 200
+[debug] [2023-10-10T18:18:05.578Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/battle-ships-40f27:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-10-10T18:18:05.579Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-10-10T18:18:05.580Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-10-10T18:18:06.582Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/runtimeconfig.googleapis.com 200
+[debug] [2023-10-10T18:18:06.582Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-10-10T18:18:06.612Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/cloudfunctions.googleapis.com 200
+[debug] [2023-10-10T18:18:06.612Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-10-10T18:18:06.612Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-10-10T18:18:08.443Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-10-10T18:18:08.443Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-10-10T18:18:18.445Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-10-10T18:18:19.412Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/cloudfunctions.googleapis.com 200
+[debug] [2023-10-10T18:18:19.412Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/cloudfunctions.googleapis.com [omitted]
