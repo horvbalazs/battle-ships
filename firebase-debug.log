@@ -1,57 +1,259 @@
-[debug] [2023-10-10T18:17:57.430Z] ----------------------------------------------------------------------
-[debug] [2023-10-10T18:17:57.432Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Balázs\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2023-10-10T18:17:57.432Z] CLI Version:   11.2.2
-[debug] [2023-10-10T18:17:57.432Z] Platform:      win32
-[debug] [2023-10-10T18:17:57.432Z] Node Version:  v18.15.0
-[debug] [2023-10-10T18:17:57.433Z] Time:          Tue Oct 10 2023 20:17:57 GMT+0200 (közép-európai nyári idő)
-[debug] [2023-10-10T18:17:57.434Z] ----------------------------------------------------------------------
+[debug] [2023-10-10T18:49:47.598Z] ----------------------------------------------------------------------
+[debug] [2023-10-10T18:49:47.600Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Balázs\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-10-10T18:49:47.601Z] CLI Version:   11.2.2
+[debug] [2023-10-10T18:49:47.601Z] Platform:      win32
+[debug] [2023-10-10T18:49:47.601Z] Node Version:  v18.15.0
+[debug] [2023-10-10T18:49:47.602Z] Time:          Tue Oct 10 2023 20:49:47 GMT+0200 (közép-európai nyári idő)
+[debug] [2023-10-10T18:49:47.602Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2023-10-10T18:17:57.441Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-10-10T18:17:57.441Z] > authorizing via signed-in user (horvbalazs93@gmail.com)
+[debug] [2023-10-10T18:49:47.663Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-10T18:49:47.663Z] > authorizing via signed-in user (horvbalazs93@gmail.com)
+[debug] [2023-10-10T18:49:47.664Z] [iam] checking project battle-ships-40f27 for permissions ["firebase.projects.get"]
+[debug] [2023-10-10T18:49:47.666Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/battle-ships-40f27:testIamPermissions [none]
+[debug] [2023-10-10T18:49:47.666Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/battle-ships-40f27:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-10-10T18:49:48.478Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/battle-ships-40f27:testIamPermissions 200
+[debug] [2023-10-10T18:49:48.478Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/battle-ships-40f27:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-10-10T18:49:48.479Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/battle-ships-40f27 [none]
+[debug] [2023-10-10T18:49:48.743Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/battle-ships-40f27 200
+[debug] [2023-10-10T18:49:48.743Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/battle-ships-40f27 {"projectId":"battle-ships-40f27","projectNumber":"622589914445","displayName":"battle-ships","name":"projects/battle-ships-40f27","resources":{"hostingSite":"battle-ships-40f27"},"state":"ACTIVE","etag":"1_d7630f40-f7a8-44e1-be4a-cda39f1b4c85"}
 [info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+[info] === Serving from 'C:\Users\Balázs\Documents\Projects\battle-ships'...
+[info] 
+[debug] [2023-10-10T18:49:48.747Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/battle-ships-40f27/sites 
+[warn] !  Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"18\". Using node@18 from host."}}
+[debug] [2023-10-10T18:49:48.766Z] defaultcredentials: writing to file C:\Users\Balázs\AppData\Roaming\firebase\horvbalazs93_gmail_com_application_default_credentials.json
+[debug] [2023-10-10T18:49:48.767Z] Setting GAC to C:\Users\Balázs\AppData\Roaming\firebase\horvbalazs93_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Balázs\\AppData\\Roaming\\firebase\\horvbalazs93_gmail_com_application_default_credentials.json"}}
+[debug] [2023-10-10T18:49:48.768Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/battle-ships-40f27/adminSdkConfig [none]
+[debug] [2023-10-10T18:49:49.099Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/battle-ships-40f27/adminSdkConfig 200
+[debug] [2023-10-10T18:49:49.099Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/battle-ships-40f27/adminSdkConfig {"projectId":"battle-ships-40f27","storageBucket":"battle-ships-40f27.appspot.com"}
+[debug] [2023-10-10T18:49:49.685Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/battle-ships-40f27/sites 200
+[debug] [2023-10-10T18:49:49.686Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/battle-ships-40f27/sites {"sites":[{"name":"projects/battle-ships-40f27/sites/battle-ships-40f27","defaultUrl":"https://battle-ships-40f27.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-10-10T18:49:49.686Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/battle-ships-40f27/webApps/-/config [none]
+[debug] [2023-10-10T18:49:50.252Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/battle-ships-40f27/webApps/-/config 200
+[debug] [2023-10-10T18:49:50.252Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/battle-ships-40f27/webApps/-/config {"projectId":"battle-ships-40f27","storageBucket":"battle-ships-40f27.appspot.com","apiKey":"AIzaSyAYXi3Gb6npynDjKV6Uf3vS7UHobR1lLqo","authDomain":"battle-ships-40f27.firebaseapp.com","messagingSenderId":"622589914445"}
+[info] i  functions: Watching "C:\Users\Balázs\Documents\Projects\battle-ships\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions\" for Cloud Functions..."}}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2023-10-10T18:49:50.274Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-10-10T18:49:53.326Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "~9.1.1",
+    "firebase-functions": "^3.11.0",
+    "json-server": "^0.16.1",
+    "pluralize": "^8.0.0"
+  },
+  "private": true
+}
+[debug] [2023-10-10T18:49:53.327Z] Building nodejs source
+[debug] [2023-10-10T18:49:53.327Z] Analyzing nodejs backend spec
+[debug] [2023-10-10T18:49:53.328Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-10-10T18:49:53.540Z] Serving at port 9005
 
-You're about to initialize a Firebase project in this directory:
+[debug] [2023-10-10T18:49:53.671Z] Got response from /__/functions.yaml {"endpoints":{"main":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"main"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-10-10T18:49:53.678Z] shutdown requested via /__/quitquitquit
 
-  C:\Users\Balázs\Documents\Projects\battle-ships
-
-[info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[debug] [2023-10-10T18:18:02.883Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
-[debug] [2023-10-10T18:18:03.420Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
-[debug] [2023-10-10T18:18:03.420Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
-[info] i  Using project battle-ships-40f27 (battle-ships) 
-[info] 
-=== Functions Setup
-[info] 
-[info] A functions directory will be created in your project with sample code
-[info] pre-configured. Functions can be deployed with firebase deploy.
-[info] 
-[debug] [2023-10-10T18:18:05.316Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-10-10T18:18:05.316Z] > authorizing via signed-in user (horvbalazs93@gmail.com)
-[debug] [2023-10-10T18:18:05.316Z] [iam] checking project battle-ships-40f27 for permissions ["firebase.projects.get"]
-[debug] [2023-10-10T18:18:05.317Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/battle-ships-40f27:testIamPermissions [none]
-[debug] [2023-10-10T18:18:05.317Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/battle-ships-40f27:testIamPermissions {"permissions":["firebase.projects.get"]}
-[debug] [2023-10-10T18:18:05.578Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/battle-ships-40f27:testIamPermissions 200
-[debug] [2023-10-10T18:18:05.578Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/battle-ships-40f27:testIamPermissions {"permissions":["firebase.projects.get"]}
-[debug] [2023-10-10T18:18:05.579Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/cloudfunctions.googleapis.com [none]
-[debug] [2023-10-10T18:18:05.580Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/runtimeconfig.googleapis.com [none]
-[debug] [2023-10-10T18:18:06.582Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/runtimeconfig.googleapis.com 200
-[debug] [2023-10-10T18:18:06.582Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/runtimeconfig.googleapis.com [omitted]
-[debug] [2023-10-10T18:18:06.612Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/cloudfunctions.googleapis.com 200
-[debug] [2023-10-10T18:18:06.612Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/cloudfunctions.googleapis.com [omitted]
-[debug] [2023-10-10T18:18:06.612Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/cloudfunctions.googleapis.com:enable [none]
-[debug] [2023-10-10T18:18:08.443Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/cloudfunctions.googleapis.com:enable 200
-[debug] [2023-10-10T18:18:08.443Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/cloudfunctions.googleapis.com:enable [omitted]
-[debug] [2023-10-10T18:18:18.445Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/cloudfunctions.googleapis.com [none]
-[debug] [2023-10-10T18:18:19.412Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/cloudfunctions.googleapis.com 200
-[debug] [2023-10-10T18:18:19.412Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/battle-ships-40f27/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions[us-central1-main]: http function initialized (http://localhost:5001/battle-ships-40f27/us-central1/main). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/battle-ships-40f27/us-central1/main)."}}
+[info] [hosting] Rewriting /api/ to http://localhost:5001/battle-ships-40f27/us-central1/main for local Function us-central1/main
+[debug] [2023-10-10T18:50:00.559Z] >>> [apiv2][query] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/ 
+[debug] [2023-10-10T18:50:00.562Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2023-10-10T18:50:00.562Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2023-10-10T18:50:00.563Z] Accepted request GET /battle-ships-40f27/us-central1/main/api/ --> us-central1-main
+[debug] [2023-10-10T18:50:00.571Z] [worker-pool] addWorker(us-central1-main) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-main)"}}
+[debug] [2023-10-10T18:50:00.572Z] [worker-pool] Adding worker with key us-central1-main, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-main, total=1"}}
+[debug] [2023-10-10T18:50:00.572Z] [worker-pool] submitWork(triggerId=us-central1-main) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-main)"}}
+[debug] [2023-10-10T18:50:00.572Z] [worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: BUSY"}}
+[debug] [2023-10-10T18:50:01.798Z] [runtime-status] [24364] Functions runtime initialized. {"cwd":"C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions","node_version":"18.15.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Balázs\\\\Documents\\\\Projects\\\\battle-ships\\\\functions\",\"node_version\":\"18.15.0\"}"}}
+[debug] [2023-10-10T18:50:01.799Z] [runtime-status] [24364] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Disabled runtime features: undefined"}}
+[debug] [2023-10-10T18:50:01.802Z] [runtime-status] [24364] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.1.1","resolution":"C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.1.1\",\"resolution\":\"C:\\\\Users\\\\Balázs\\\\Documents\\\\Projects\\\\battle-ships\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-10T18:50:01.803Z] [runtime-status] [24364] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\Balázs\\\\Documents\\\\Projects\\\\battle-ships\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-10T18:50:01.804Z] [runtime-status] [24364] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-10-10T18:50:01.804Z] [runtime-status] [24364] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\Balázs\\\\Documents\\\\Projects\\\\battle-ships\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-10T18:50:01.848Z] [runtime-status] [24364] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-10-10T18:50:01.848Z] [runtime-status] [24364] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\Balázs\\\\Documents\\\\Projects\\\\battle-ships\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-10-10T18:50:01.849Z] [runtime-status] [24364] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\Balázs\\\\Documents\\\\Projects\\\\battle-ships\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-10T18:50:01.850Z] [runtime-status] [24364] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.1.1","resolution":"C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.1.1\",\"resolution\":\"C:\\\\Users\\\\Balázs\\\\Documents\\\\Projects\\\\battle-ships\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-10T18:50:01.851Z] [runtime-status] [24364] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\Balázs\\\\Documents\\\\Projects\\\\battle-ships\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-10T18:50:01.851Z] [runtime-status] [24364] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.1.1","resolution":"C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.1.1\",\"resolution\":\"C:\\\\Users\\\\Balázs\\\\Documents\\\\Projects\\\\battle-ships\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-10-10T18:50:02.021Z] [runtime-status] [24364] Beginning invocation function main! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Beginning invocation function main!"}}
+[info] i  functions: Beginning execution of "main" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"Beginning execution of \"main\""}}
+[debug] [2023-10-10T18:50:02.022Z] [runtime-status] [24364] Running main in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Running main in signature http"}}
+[debug] [2023-10-10T18:50:02.024Z] [runtime-status] [24364] Attempting to listen to port: \\?\pipe\fire_emu_d23afcac49dd8fd3 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Attempting to listen to port: \\\\?\\pipe\\fire_emu_d23afcac49dd8fd3"}}
+[debug] [2023-10-10T18:50:02.025Z] [runtime-status] [24364] Listening to port: \\?\pipe\fire_emu_d23afcac49dd8fd3 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Listening to port: \\\\?\\pipe\\fire_emu_d23afcac49dd8fd3"}}
+[debug] [2023-10-10T18:50:02.026Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-10T18:50:02.027Z] [functions] Got req.url=/battle-ships-40f27/us-central1/main/api/, mapping to path=/api/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/battle-ships-40f27/us-central1/main/api/, mapping to path=/api/"}}
+[debug] [2023-10-10T18:50:02.030Z] [runtime-status] [24364] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Ephemeral server handling GET request"}}
+[debug] [2023-10-10T18:50:02.033Z] [runtime-status] [24364] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Ephemeral server survived."}}
+[debug] [2023-10-10T18:50:02.049Z] <<< [apiv2][status] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/ 200
+[debug] [2023-10-10T18:50:02.049Z] <<< [apiv2][body] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/ [stream]
+[info] i  hosting: 127.0.0.1 - - [10/Oct/2023:18:50:02 +0000] "GET /api/ HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [10/Oct/2023:18:50:02 +0000] \"GET /api/ HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\""}}
+[info] i  functions: Finished "main" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"Finished \"main\" in ~1s"}}
+[debug] [2023-10-10T18:50:02.053Z] [worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: IDLE"}}
+[debug] [2023-10-10T18:50:02.053Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] [hosting] Rewriting /api/style.css to http://localhost:5001/battle-ships-40f27/us-central1/main for local Function us-central1/main
+[debug] [2023-10-10T18:50:02.060Z] >>> [apiv2][query] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/style.css 
+[info] [hosting] Rewriting /api/script.js to http://localhost:5001/battle-ships-40f27/us-central1/main for local Function us-central1/main
+[debug] [2023-10-10T18:50:02.062Z] >>> [apiv2][query] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/script.js 
+[debug] [2023-10-10T18:50:02.064Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2023-10-10T18:50:02.064Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2023-10-10T18:50:02.064Z] Accepted request GET /battle-ships-40f27/us-central1/main/api/style.css --> us-central1-main
+[debug] [2023-10-10T18:50:02.064Z] [worker-pool] submitWork(triggerId=us-central1-main) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-main)"}}
+[debug] [2023-10-10T18:50:02.064Z] [worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: BUSY"}}
+[debug] [2023-10-10T18:50:02.064Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2023-10-10T18:50:02.064Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2023-10-10T18:50:02.064Z] Accepted request GET /battle-ships-40f27/us-central1/main/api/script.js --> us-central1-main
+[debug] [2023-10-10T18:50:02.070Z] [worker-pool] addWorker(us-central1-main) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-main)"}}
+[debug] [2023-10-10T18:50:02.070Z] [worker-pool] Adding worker with key us-central1-main, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-main, total=2"}}
+[debug] [2023-10-10T18:50:02.070Z] [worker-pool] submitWork(triggerId=us-central1-main) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-main)"}}
+[debug] [2023-10-10T18:50:02.070Z] [worker-us-central1-main-cfcf3d1e-9f0f-4d0c-9d00-c76d72c2403d]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-main-cfcf3d1e-9f0f-4d0c-9d00-c76d72c2403d]: BUSY"}}
+[debug] [2023-10-10T18:50:02.070Z] [runtime-status] [24364] Beginning invocation function main! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Beginning invocation function main!"}}
+[info] i  functions: Beginning execution of "main" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"Beginning execution of \"main\""}}
+[debug] [2023-10-10T18:50:02.071Z] [runtime-status] [24364] Running main in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Running main in signature http"}}
+[debug] [2023-10-10T18:50:02.071Z] [runtime-status] [24364] Attempting to listen to port: \\?\pipe\fire_emu_d23afcac49dd8fd3 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Attempting to listen to port: \\\\?\\pipe\\fire_emu_d23afcac49dd8fd3"}}
+[debug] [2023-10-10T18:50:02.071Z] [runtime-status] [24364] Listening to port: \\?\pipe\fire_emu_d23afcac49dd8fd3 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Listening to port: \\\\?\\pipe\\fire_emu_d23afcac49dd8fd3"}}
+[debug] [2023-10-10T18:50:02.072Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-10T18:50:02.072Z] [functions] Got req.url=/battle-ships-40f27/us-central1/main/api/style.css, mapping to path=/api/style.css {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/battle-ships-40f27/us-central1/main/api/style.css, mapping to path=/api/style.css"}}
+[debug] [2023-10-10T18:50:02.073Z] [runtime-status] [24364] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Ephemeral server handling GET request"}}
+[debug] [2023-10-10T18:50:02.074Z] [runtime-status] [24364] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Ephemeral server survived."}}
+[debug] [2023-10-10T18:50:02.081Z] <<< [apiv2][status] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/style.css 200
+[debug] [2023-10-10T18:50:02.082Z] <<< [apiv2][body] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/style.css [stream]
+[info] i  hosting: 127.0.0.1 - - [10/Oct/2023:18:50:02 +0000] "GET /api/style.css HTTP/1.1" 200 - "http://localhost:5000/api/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [10/Oct/2023:18:50:02 +0000] \"GET /api/style.css HTTP/1.1\" 200 - \"http://localhost:5000/api/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\""}}
+[info] i  functions: Finished "main" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"Finished \"main\" in ~1s"}}
+[debug] [2023-10-10T18:50:02.084Z] [worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: IDLE"}}
+[debug] [2023-10-10T18:50:02.084Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2023-10-10T18:50:03.315Z] [runtime-status] [9988] Functions runtime initialized. {"cwd":"C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions","node_version":"18.15.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Balázs\\\\Documents\\\\Projects\\\\battle-ships\\\\functions\",\"node_version\":\"18.15.0\"}"}}
+[debug] [2023-10-10T18:50:03.316Z] [runtime-status] [9988] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Disabled runtime features: undefined"}}
+[debug] [2023-10-10T18:50:03.319Z] [runtime-status] [9988] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.1.1","resolution":"C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.1.1\",\"resolution\":\"C:\\\\Users\\\\Balázs\\\\Documents\\\\Projects\\\\battle-ships\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-10T18:50:03.321Z] [runtime-status] [9988] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\Balázs\\\\Documents\\\\Projects\\\\battle-ships\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-10T18:50:03.321Z] [runtime-status] [9988] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-10-10T18:50:03.322Z] [runtime-status] [9988] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\Balázs\\\\Documents\\\\Projects\\\\battle-ships\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-10T18:50:03.367Z] [runtime-status] [9988] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-10-10T18:50:03.367Z] [runtime-status] [9988] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\Balázs\\\\Documents\\\\Projects\\\\battle-ships\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-10-10T18:50:03.368Z] [runtime-status] [9988] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\Balázs\\\\Documents\\\\Projects\\\\battle-ships\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-10T18:50:03.369Z] [runtime-status] [9988] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.1.1","resolution":"C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.1.1\",\"resolution\":\"C:\\\\Users\\\\Balázs\\\\Documents\\\\Projects\\\\battle-ships\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-10T18:50:03.370Z] [runtime-status] [9988] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"C:\\\\Users\\\\Balázs\\\\Documents\\\\Projects\\\\battle-ships\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2023-10-10T18:50:03.370Z] [runtime-status] [9988] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.1.1","resolution":"C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.1.1\",\"resolution\":\"C:\\\\Users\\\\Balázs\\\\Documents\\\\Projects\\\\battle-ships\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-10-10T18:50:03.545Z] [runtime-status] [9988] Beginning invocation function main! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Beginning invocation function main!"}}
+[info] i  functions: Beginning execution of "main" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"Beginning execution of \"main\""}}
+[debug] [2023-10-10T18:50:03.546Z] [runtime-status] [9988] Running main in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Running main in signature http"}}
+[debug] [2023-10-10T18:50:03.548Z] [runtime-status] [9988] Attempting to listen to port: \\?\pipe\fire_emu_da78a939067aab98 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Attempting to listen to port: \\\\?\\pipe\\fire_emu_da78a939067aab98"}}
+[debug] [2023-10-10T18:50:03.550Z] [runtime-status] [9988] Listening to port: \\?\pipe\fire_emu_da78a939067aab98 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Listening to port: \\\\?\\pipe\\fire_emu_da78a939067aab98"}}
+[debug] [2023-10-10T18:50:03.550Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-10T18:50:03.550Z] [functions] Got req.url=/battle-ships-40f27/us-central1/main/api/script.js, mapping to path=/api/script.js {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/battle-ships-40f27/us-central1/main/api/script.js, mapping to path=/api/script.js"}}
+[debug] [2023-10-10T18:50:03.554Z] [runtime-status] [9988] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Ephemeral server handling GET request"}}
+[debug] [2023-10-10T18:50:03.557Z] [runtime-status] [9988] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Ephemeral server survived."}}
+[debug] [2023-10-10T18:50:03.575Z] <<< [apiv2][status] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/script.js 200
+[debug] [2023-10-10T18:50:03.575Z] <<< [apiv2][body] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/script.js [stream]
+[info] i  hosting: 127.0.0.1 - - [10/Oct/2023:18:50:03 +0000] "GET /api/script.js HTTP/1.1" 200 - "http://localhost:5000/api/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [10/Oct/2023:18:50:03 +0000] \"GET /api/script.js HTTP/1.1\" 200 - \"http://localhost:5000/api/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\""}}
+[info] i  functions: Finished "main" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"Finished \"main\" in ~1s"}}
+[debug] [2023-10-10T18:50:03.577Z] [worker-us-central1-main-cfcf3d1e-9f0f-4d0c-9d00-c76d72c2403d]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-main-cfcf3d1e-9f0f-4d0c-9d00-c76d72c2403d]: IDLE"}}
+[debug] [2023-10-10T18:50:03.577Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] [hosting] Rewriting /api/db to http://localhost:5001/battle-ships-40f27/us-central1/main for local Function us-central1/main
+[debug] [2023-10-10T18:50:03.580Z] >>> [apiv2][query] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/db 
+[info] [hosting] Rewriting /api/__rules to http://localhost:5001/battle-ships-40f27/us-central1/main for local Function us-central1/main
+[debug] [2023-10-10T18:50:03.582Z] >>> [apiv2][query] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/__rules 
+[debug] [2023-10-10T18:50:03.584Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2023-10-10T18:50:03.584Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2023-10-10T18:50:03.584Z] Accepted request GET /battle-ships-40f27/us-central1/main/api/db --> us-central1-main
+[debug] [2023-10-10T18:50:03.584Z] [worker-pool] submitWork(triggerId=us-central1-main) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-main)"}}
+[debug] [2023-10-10T18:50:03.584Z] [worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: BUSY"}}
+[debug] [2023-10-10T18:50:03.584Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2023-10-10T18:50:03.584Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2023-10-10T18:50:03.584Z] Accepted request GET /battle-ships-40f27/us-central1/main/api/__rules --> us-central1-main
+[debug] [2023-10-10T18:50:03.584Z] [worker-pool] submitWork(triggerId=us-central1-main) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-main)"}}
+[debug] [2023-10-10T18:50:03.585Z] [worker-us-central1-main-cfcf3d1e-9f0f-4d0c-9d00-c76d72c2403d]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-main-cfcf3d1e-9f0f-4d0c-9d00-c76d72c2403d]: BUSY"}}
+[debug] [2023-10-10T18:50:03.585Z] [runtime-status] [24364] Beginning invocation function main! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Beginning invocation function main!"}}
+[info] i  functions: Beginning execution of "main" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"Beginning execution of \"main\""}}
+[debug] [2023-10-10T18:50:03.585Z] [runtime-status] [24364] Running main in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Running main in signature http"}}
+[debug] [2023-10-10T18:50:03.585Z] [runtime-status] [24364] Attempting to listen to port: \\?\pipe\fire_emu_d23afcac49dd8fd3 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Attempting to listen to port: \\\\?\\pipe\\fire_emu_d23afcac49dd8fd3"}}
+[debug] [2023-10-10T18:50:03.585Z] [runtime-status] [24364] Listening to port: \\?\pipe\fire_emu_d23afcac49dd8fd3 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Listening to port: \\\\?\\pipe\\fire_emu_d23afcac49dd8fd3"}}
+[debug] [2023-10-10T18:50:03.586Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-10T18:50:03.586Z] [functions] Got req.url=/battle-ships-40f27/us-central1/main/api/db, mapping to path=/api/db {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/battle-ships-40f27/us-central1/main/api/db, mapping to path=/api/db"}}
+[debug] [2023-10-10T18:50:03.587Z] [runtime-status] [24364] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Ephemeral server handling GET request"}}
+[debug] [2023-10-10T18:50:03.588Z] [runtime-status] [24364] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Ephemeral server survived."}}
+[debug] [2023-10-10T18:50:03.592Z] <<< [apiv2][status] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/db 200
+[debug] [2023-10-10T18:50:03.592Z] <<< [apiv2][body] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/db [stream]
+[info] >  GET /api/db 200 2.282 ms - - {"user":"\u001b[0mGET /api/db \u001b[32m200\u001b[0m 2.282 ms - -\u001b[0m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[0mGET /api/db \u001b[32m200\u001b[0m 2.282 ms - -\u001b[0m"}}
+[info] i  hosting: 127.0.0.1 - - [10/Oct/2023:18:50:03 +0000] "GET /api/db HTTP/1.1" 200 - "http://localhost:5000/api/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [10/Oct/2023:18:50:03 +0000] \"GET /api/db HTTP/1.1\" 200 - \"http://localhost:5000/api/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\""}}
+[info] i  functions: Finished "main" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"Finished \"main\" in ~1s"}}
+[debug] [2023-10-10T18:50:03.595Z] [worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: IDLE"}}
+[debug] [2023-10-10T18:50:03.595Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2023-10-10T18:50:03.599Z] [runtime-status] [9988] Beginning invocation function main! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Beginning invocation function main!"}}
+[info] i  functions: Beginning execution of "main" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"Beginning execution of \"main\""}}
+[debug] [2023-10-10T18:50:03.599Z] [runtime-status] [9988] Running main in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Running main in signature http"}}
+[debug] [2023-10-10T18:50:03.600Z] [runtime-status] [9988] Attempting to listen to port: \\?\pipe\fire_emu_da78a939067aab98 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Attempting to listen to port: \\\\?\\pipe\\fire_emu_da78a939067aab98"}}
+[debug] [2023-10-10T18:50:03.600Z] [runtime-status] [9988] Listening to port: \\?\pipe\fire_emu_da78a939067aab98 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Listening to port: \\\\?\\pipe\\fire_emu_da78a939067aab98"}}
+[debug] [2023-10-10T18:50:03.600Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-10T18:50:03.601Z] [functions] Got req.url=/battle-ships-40f27/us-central1/main/api/__rules, mapping to path=/api/__rules {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/battle-ships-40f27/us-central1/main/api/__rules, mapping to path=/api/__rules"}}
+[debug] [2023-10-10T18:50:03.602Z] [runtime-status] [9988] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Ephemeral server handling GET request"}}
+[debug] [2023-10-10T18:50:03.603Z] [runtime-status] [9988] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [9988] Ephemeral server survived."}}
+[debug] [2023-10-10T18:50:03.607Z] <<< [apiv2][status] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/__rules 200
+[debug] [2023-10-10T18:50:03.607Z] <<< [apiv2][body] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/__rules [stream]
+[info] i  hosting: 127.0.0.1 - - [10/Oct/2023:18:50:03 +0000] "GET /api/__rules HTTP/1.1" 200 134 "http://localhost:5000/api/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [10/Oct/2023:18:50:03 +0000] \"GET /api/__rules HTTP/1.1\" 200 134 \"http://localhost:5000/api/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\""}}
+[info] >  GET /api/__rules 200 1.957 ms - 134 {"user":"\u001b[0mGET /api/__rules \u001b[32m200\u001b[0m 1.957 ms - 134\u001b[0m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[0mGET /api/__rules \u001b[32m200\u001b[0m 1.957 ms - 134\u001b[0m"}}
+[info] i  functions: Finished "main" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"Finished \"main\" in ~1s"}}
+[debug] [2023-10-10T18:50:03.609Z] [worker-us-central1-main-cfcf3d1e-9f0f-4d0c-9d00-c76d72c2403d]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-main-cfcf3d1e-9f0f-4d0c-9d00-c76d72c2403d]: IDLE"}}
+[debug] [2023-10-10T18:50:03.609Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] [hosting] Rewriting /api/shipTypes to http://localhost:5001/battle-ships-40f27/us-central1/main for local Function us-central1/main
+[debug] [2023-10-10T18:50:19.111Z] >>> [apiv2][query] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/shipTypes 
+[debug] [2023-10-10T18:50:19.114Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2023-10-10T18:50:19.114Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2023-10-10T18:50:19.114Z] Accepted request GET /battle-ships-40f27/us-central1/main/api/shipTypes --> us-central1-main
+[debug] [2023-10-10T18:50:19.114Z] [worker-pool] submitWork(triggerId=us-central1-main) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-main)"}}
+[debug] [2023-10-10T18:50:19.114Z] [worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: BUSY"}}
+[debug] [2023-10-10T18:50:19.115Z] [runtime-status] [24364] Beginning invocation function main! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Beginning invocation function main!"}}
+[info] i  functions: Beginning execution of "main" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"Beginning execution of \"main\""}}
+[debug] [2023-10-10T18:50:19.115Z] [runtime-status] [24364] Running main in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Running main in signature http"}}
+[debug] [2023-10-10T18:50:19.115Z] [runtime-status] [24364] Attempting to listen to port: \\?\pipe\fire_emu_d23afcac49dd8fd3 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Attempting to listen to port: \\\\?\\pipe\\fire_emu_d23afcac49dd8fd3"}}
+[debug] [2023-10-10T18:50:19.115Z] [runtime-status] [24364] Listening to port: \\?\pipe\fire_emu_d23afcac49dd8fd3 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Listening to port: \\\\?\\pipe\\fire_emu_d23afcac49dd8fd3"}}
+[debug] [2023-10-10T18:50:19.116Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-10T18:50:19.116Z] [functions] Got req.url=/battle-ships-40f27/us-central1/main/api/shipTypes, mapping to path=/api/shipTypes {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/battle-ships-40f27/us-central1/main/api/shipTypes, mapping to path=/api/shipTypes"}}
+[debug] [2023-10-10T18:50:19.117Z] [runtime-status] [24364] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Ephemeral server handling GET request"}}
+[debug] [2023-10-10T18:50:19.118Z] [runtime-status] [24364] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Ephemeral server survived."}}
+[info] >  GET /api/shipTypes 200 21.318 ms - 355 {"user":"\u001b[0mGET /api/shipTypes \u001b[32m200\u001b[0m 21.318 ms - 355\u001b[0m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[0mGET /api/shipTypes \u001b[32m200\u001b[0m 21.318 ms - 355\u001b[0m"}}
+[debug] [2023-10-10T18:50:19.141Z] <<< [apiv2][status] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/shipTypes 200
+[debug] [2023-10-10T18:50:19.141Z] <<< [apiv2][body] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/shipTypes [stream]
+[info] i  hosting: 127.0.0.1 - - [10/Oct/2023:18:50:19 +0000] "GET /api/shipTypes HTTP/1.1" 200 355 "http://localhost:5000/api/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [10/Oct/2023:18:50:19 +0000] \"GET /api/shipTypes HTTP/1.1\" 200 355 \"http://localhost:5000/api/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\""}}
+[info] i  functions: Finished "main" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"Finished \"main\" in ~1s"}}
+[debug] [2023-10-10T18:50:19.142Z] [worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: IDLE"}}
+[debug] [2023-10-10T18:50:19.142Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] [hosting] Rewriting /api/layout to http://localhost:5001/battle-ships-40f27/us-central1/main for local Function us-central1/main
+[debug] [2023-10-10T18:50:23.572Z] >>> [apiv2][query] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/layout 
+[debug] [2023-10-10T18:50:23.573Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2023-10-10T18:50:23.573Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2023-10-10T18:50:23.573Z] Accepted request GET /battle-ships-40f27/us-central1/main/api/layout --> us-central1-main
+[debug] [2023-10-10T18:50:23.573Z] [worker-pool] submitWork(triggerId=us-central1-main) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-main)"}}
+[debug] [2023-10-10T18:50:23.574Z] [worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: BUSY"}}
+[debug] [2023-10-10T18:50:23.574Z] [runtime-status] [24364] Beginning invocation function main! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Beginning invocation function main!"}}
+[info] i  functions: Beginning execution of "main" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"Beginning execution of \"main\""}}
+[debug] [2023-10-10T18:50:23.575Z] [runtime-status] [24364] Running main in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Running main in signature http"}}
+[debug] [2023-10-10T18:50:23.575Z] [runtime-status] [24364] Attempting to listen to port: \\?\pipe\fire_emu_d23afcac49dd8fd3 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Attempting to listen to port: \\\\?\\pipe\\fire_emu_d23afcac49dd8fd3"}}
+[debug] [2023-10-10T18:50:23.575Z] [runtime-status] [24364] Listening to port: \\?\pipe\fire_emu_d23afcac49dd8fd3 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Listening to port: \\\\?\\pipe\\fire_emu_d23afcac49dd8fd3"}}
+[debug] [2023-10-10T18:50:23.575Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-10-10T18:50:23.575Z] [functions] Got req.url=/battle-ships-40f27/us-central1/main/api/layout, mapping to path=/api/layout {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/battle-ships-40f27/us-central1/main/api/layout, mapping to path=/api/layout"}}
+[debug] [2023-10-10T18:50:23.577Z] [runtime-status] [24364] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Ephemeral server handling GET request"}}
+[debug] [2023-10-10T18:50:23.577Z] [runtime-status] [24364] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"[runtime-status] [24364] Ephemeral server survived."}}
+[info] >  GET /api/layout 200 19.322 ms - - {"user":"\u001b[0mGET /api/layout \u001b[32m200\u001b[0m 19.322 ms - -\u001b[0m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[0mGET /api/layout \u001b[32m200\u001b[0m 19.322 ms - -\u001b[0m"}}
+[debug] [2023-10-10T18:50:23.599Z] <<< [apiv2][status] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/layout 200
+[debug] [2023-10-10T18:50:23.599Z] <<< [apiv2][body] GET http://localhost:5001/battle-ships-40f27/us-central1/main/api/layout [stream]
+[info] i  hosting: 127.0.0.1 - - [10/Oct/2023:18:50:23 +0000] "GET /api/layout HTTP/1.1" 200 - "http://localhost:5000/api/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [10/Oct/2023:18:50:23 +0000] \"GET /api/layout HTTP/1.1\" 200 - \"http://localhost:5000/api/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\""}}
+[info] i  functions: Finished "main" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-main"},"extension":{},"message":"Finished \"main\" in ~1s"}}
+[debug] [2023-10-10T18:50:23.601Z] [worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-main-cbbf1394-ceff-40a0-b49b-53884557d128]: IDLE"}}
+[debug] [2023-10-10T18:50:23.601Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2023-10-10T18:51:46.356Z] File C:\Users\Balázs\Documents\Projects\battle-ships\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Balázs\\Documents\\Projects\\battle-ships\\functions\\index.js changed, reloading triggers"}}
