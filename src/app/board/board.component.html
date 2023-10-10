@@ -1,0 +1,17 @@
+
+<div class="ships">
+  <div class="ship" *ngFor="let ship of ships">
+    <div class="ship-img" [class]="ship.type"></div>
+    <div class="hitS" *ngFor="let _ of [].constructor(ship.hits)"></div>
+    <div class="missS" *ngFor="let _ of [].constructor(getHealth(ship))"></div>
+  </div>
+</div>
+
+<div class="board">
+  <div class="row" *ngFor="let row of tiles">
+    <div class="tile" *ngFor="let tile of row"
+         [class.hit]="tile === TileState.HIT"
+         [class.miss]="tile === TileState.MISS">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+.row {
+  display: flex;
+}
+
+.tile {
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &.miss {
+    background-image: url("../../assets/Miss.png");
+  }
+
+  &.hit {
+    background-image: url("../../assets/Hit.png");
+  }
+}
+
+.hitS {
+  width: 10px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../assets/Hit small.png");
+}
+
+.missS {
+  width: 10px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../assets/Miss small.png");
+}
+
+.ship-img {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 20px;
+
+  &.carrier {
+    background-image: url("../../assets/Carrier Shape.png");
+  }
+
+  &.battleship {
+    background-image: url("../../assets/Battleship Shape.png");
+  }
+
+  &.cruiser {
+    background-image: url("../../assets/Cruiser Shape.png");
+  }
+
+  &.destroyer {
+    background-image: url("../../assets/Destroyer Shape.png");
+  }
+
+  &.submarine {
+    background-image: url("../../assets/Submarine Shape.png");
+  }
+}
